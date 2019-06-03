@@ -82,9 +82,7 @@ public class WebConfig implements WebMvcConfigurer{
 	 
 	 @Override
 		public void addResourceHandlers(ResourceHandlerRegistry registry) {
-			registry
-			.addResourceHandler(env.getProperty("pathPattern"))
-			.addResourceLocations(env.getProperty("resourceLocation"));
+		 registry.addResourceHandler("/images/**").addResourceLocations("file:/Users/noah/mysite-uploads/profile/");
 		}
 	
 	
