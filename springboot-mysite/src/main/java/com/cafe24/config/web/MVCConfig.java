@@ -20,8 +20,8 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import com.fasterxml.jackson.module.paramnames.ParameterNamesModule;
 
-@EnableWebMvc
-@Configuration
+//@EnableWebMvc
+//@Configuration
 public class MVCConfig extends WebMvcConfigurerAdapter {
 	/*
 	 * 
