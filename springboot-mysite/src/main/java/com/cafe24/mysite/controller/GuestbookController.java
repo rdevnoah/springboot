@@ -45,4 +45,11 @@ public class GuestbookController {
 		return "redirect:/guestbook";
 	}
 	
+	@RequestMapping("/timeline")
+	public String timeline(Model model) {
+		List<GuestbookVo> list = guestbookService.getList();
+		model.addAttribute("list", list);
+		return "/guestbook/index-timeline";
+	}
+	
 }
